@@ -1,4 +1,4 @@
-# 📝 Article Management System — Sharing Vision Technical Test 2021
+# 📝 Article Management System — Sharing Vision Technical Test 2025
 
 Project ini adalah hasil pengerjaan tes Backend & Frontend untuk use case **Post Article** sesuai spesifikasi dari *Sharing Vision Technical Test 2021*.  
 Aplikasi dibangun menggunakan **Python Flask** untuk backend dan **Vue 3 (Vite)** untuk frontend.
