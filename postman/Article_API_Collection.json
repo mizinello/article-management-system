@@ -1,0 +1,94 @@
+{
+    "info": {
+        "name": "Article Management API",
+        "description": "Complete CRUD operations for Article Management System",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Create Article",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"title\": \"Panduan Lengkap Belajar Python untuk Pemula dari Nol hingga Mahir\",\n    \"content\": \"Python adalah salah satu bahasa pemrograman yang paling populer di dunia saat ini. Dengan sintaks yang sederhana dan mudah dipahami, Python menjadi pilihan utama bagi pemula yang ingin belajar programming. Dalam artikel ini, kita akan membahas langkah-langkah detail untuk mempelajari Python dari dasar hingga tingkat mahir.\",\n    \"category\": \"Programming\",\n    \"status\": \"publish\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:5000/article/",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "5000",
+                    "path": ["article", ""]
+                }
+            }
+        },
+        {
+            "name": "Get All Articles",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/article/10/0",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "5000",
+                    "path": ["article", "10", "0"]
+                }
+            }
+        },
+        {
+            "name": "Get Single Article",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/article/1",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "5000",
+                    "path": ["article", "1"]
+                }
+            }
+        },
+        {
+            "name": "Update Article",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"title\": \"Panduan Lengkap Belajar Python untuk Pemula - Updated Version\",\n    \"content\": \"Python adalah salah satu bahasa pemrograman yang paling populer di dunia saat ini. UPDATE: Artikel ini telah diperbarui dengan informasi terbaru tentang Python 3.12 dan fitur-fitur terbaru yang tersedia.\",\n    \"category\": \"Programming Tutorial\",\n    \"status\": \"publish\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:5000/article/1",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "5000",
+                    "path": ["article", "1"]
+                }
+            }
+        },
+        {
+            "name": "Delete Article",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:5000/article/1",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "5000",
+                    "path": ["article", "1"]
+                }
+            }
+        }
+    ]
+}
